@@ -1,0 +1,29 @@
+body {
+  background-color: #4ecbed;
+  padding-top: 3%;
+}
+
+.box {
+  background-color: #4eb6ed;
+  padding: 20px;
+  border: 1px;
+  border-radius: 25px;
+  box-shadow: -3px 4px #273136;
+  width: 50%;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box > h1 {
+  color: #1f5491;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.box > p {
+  color: #153357;
+  font-size: 1.3em;
+  text-align: center;
+  padding-top: 2%;
+}
