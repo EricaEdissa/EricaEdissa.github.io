@@ -3,32 +3,37 @@ body {
   padding-top: 3%;
 }
 
-.box {
+.box-shadow {
   background-color: #4eb6ed;
-  padding: 20px;
   border: 1px;
   border-radius: 25px;
-  box-shadow: -3px 4px #273136;
+  box-shadow: -5px 5px #273136;
+}
+
+.box {
   width: 50%;
   height: 150px;
-  margin: auto;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .icon {
-  padding-top: 2%;
-  display: block;
+  position: relative;
+  display: inline-block;
   height: 200%;
+  max-height: 100%;
   width: 15%;
+  min-width: 150px;
   margin-left: 5%;
   margin-right: 3%;
   float: left;
   text-align: center;
 }
 .description {
-  display: block;
+  padding: 1%;
+  display: inline-block;
   height: 100%;
   width: 70%;
+  min-width: 502px;
   float: left;
 }
 
@@ -39,26 +44,23 @@ body {
   margin-left: 1.5%;
   animation: lauch-rotating 2s linear;
   position: relative;
-  transform: rotate(-10deg);
+  top: 10%;
+  transform: rotate(-20deg);
 }
 
 
 @keyframes lauch-rotating {
   0% {
     transform: rotate(0deg));
-    top: 100%;
+    top: 10%;
   }
   50% {
-    transform: rotate(360deg);
-    top: -10%;
-  }
-  80% {
-    transform: rotate(370deg);
-    top: 0%;
+    transform: rotate(180deg);
+    top: -100%;
   }
   100% {
-    transform: rotate(350deg);
-    top: 0%;
+    transform: rotate(340deg);
+    top: 10%;
   }
 }
 
