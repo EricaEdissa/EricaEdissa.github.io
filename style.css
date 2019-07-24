@@ -10,20 +10,69 @@ body {
   border-radius: 25px;
   box-shadow: -3px 4px #273136;
   width: 50%;
+  height: 150px;
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.box > h1 {
+.icon {
+  padding-top: 2%;
+  display: block;
+  height: 200%;
+  width: 15%;
+  margin-left: 5%;
+  margin-right: 3%;
+  float: left;
+  text-align: center;
+}
+.description {
+  display: block;
+  height: 100%;
+  width: 70%;
+  float: left;
+}
+
+.icon > i {
+  transform-origin: 56px 56px;
+  font-size: 112px;
+  color: #02080f;
+  margin-left: 1.5%;
+  animation: lauch-rotating 2s linear;
+  position: relative;
+  transform: rotate(-10deg);
+}
+
+
+@keyframes lauch-rotating {
+  0% {
+    transform: rotate(0deg));
+    top: 100%;
+  }
+  50% {
+    transform: rotate(360deg);
+    top: -10%;
+  }
+  80% {
+    transform: rotate(370deg);
+    top: 0%;
+  }
+  100% {
+    transform: rotate(350deg);
+    top: 0%;
+  }
+}
+
+.description > h1 {
   color: #1f5491;
   font-size: 2em;
   font-weight: bold;
   text-align: center;
 }
 
-.box > p {
+.description > p {
   color: #153357;
   font-size: 1.3em;
   text-align: center;
   padding-top: 2%;
 }
+
