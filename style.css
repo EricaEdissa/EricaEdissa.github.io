@@ -48,6 +48,10 @@ body {
   transform: rotate(-20deg);
 }
 
+.icon > i:before,
+.icon > i:after {
+  animation-play-state: paused !important;
+}
 
 @keyframes lauch-rotating {
   0% {
